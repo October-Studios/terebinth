@@ -1,6 +1,6 @@
 [package]
 name = "terebinth"
-version = "0.1.0"
+version = "0.1.0-alpha.0"
 authors = ["Cameron Howell <jango.djarin@proton.me>"]
 description = "An interpreted programming language"
 edition = "2021"
