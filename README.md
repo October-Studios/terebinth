@@ -72,7 +72,7 @@ or it can be built from source:
 ```shell
 git clone git@github.com:October-Studios/terebinth.git
 cd terebinth
-cargo build
+cargo build --release
 ```
 <p align="center">
   Copyright &copy; 2024-present
