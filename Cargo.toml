@@ -10,3 +10,4 @@ repository = "https://github.com/October-Studios/terebinth"
 rust-version = "1.79"
 
 [dependencies]
+log = "0.4.21"
