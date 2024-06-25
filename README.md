@@ -55,16 +55,18 @@
 &nbsp;
 
 ## 💭 About
+The terebinth programming language is a compiled language. The compiler is
+built entirely using Rust to ensure memory safety and robustness.
 
 ## 📕 Documentation
-The documentation for the latest version of the terebinth interpreter can be
+The documentation for the latest version of the terebinth compiler can be
 found [here](https://docs.rs/terebinth/). All previously published versions 
 can be found on [crates.io](https://crates.io/crates/terebinth/versions),
 and each version's respective documentation is accessible from there as well.
 
 ## 🔰 Getting Started
 ### Installation
-The terebinth interpreter can be installed using cargo:
+The terebinth compiler can be installed using cargo:
 ```shell
 cargo install terebinth
 ```
