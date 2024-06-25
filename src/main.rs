@@ -3,60 +3,33 @@
 //
 //     Licensed under the MIT License
 
-use log::{error, info};
+use clap::Parser;
+use log::{debug, info};
 use std::error::Error;
 
-const VERSION: &str = env!("CARGO_PKG_VERSION");
-
-#[derive(Debug)]
-pub struct Flags {
-    pub path: String,
-    pub in_files: Vec<String>,
-    pub debug: bool,
-    pub help: bool,
-    pub version: bool,
-    pub run_interpreted: bool,
-    pub cpp_out_file: String,
-    pub bin_out_file: String,
-    pub run_compiled: bool,
-    pub flag_error: bool,
-}
-
-impl Flags {
-    #[must_use]
-    pub fn new() -> Self {
-        Flags {
-            path: "".to_string(),
-            in_files: vec![],
-            debug: false,
-            help: false,
-            version: false,
-            run_interpreted: true,
-            cpp_out_file: "".to_string(),
-            bin_out_file: "".to_string(),
-            run_compiled: false,
-            flag_error: false,
-        }
-    }
+#[derive(Parser, Debug)]
+#[command(version, about, long_about = None)]
+struct Args {
+    /// Terebinth source files
+    #[arg(short, long)]
+    in_files: Vec<String>,
+    /// Operate in debug mode
+    #[arg(short, long)]
+    debug: bool,
 }
 
 fn main() -> Result<(), Box<dyn Error>> {
-    let flags: Flags = Flags::new();
-    if flags.flag_error {
-        error!("Try 'terebinth -h' for help");
-        return Ok(());
+    let args = Args::parse();
+    if args.debug {
+        debug!("Enabled debug-level logs");
     }
 
-    if flags.help {
-        println!("terebinth v {}", VERSION);
-        println!();
-        return Ok(());
+    for _ in 0..args.in_files.len() {
+        info!("Reading in input files...")
     }
 
-    if flags.version {
-        info!("terebinth v {}", VERSION);
-        return Ok(());
-    }
+    // Create terebinth program object to interpret and execute
+    // TerebinthProgram program;
 
     Ok(())
 }

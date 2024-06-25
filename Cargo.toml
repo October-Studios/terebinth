@@ -5,9 +5,11 @@ authors = ["Cameron Howell <jango.djarin@proton.me>"]
 description = "An interpreted programming language"
 edition = "2021"
 license = "MIT"
+license-file  = "LICENSE"
 readme = "README.md"
 repository = "https://github.com/October-Studios/terebinth"
 rust-version = "1.79"
 
 [dependencies]
+clap = { version = "4.5.7", features = ["derive"] }
 log = "0.4.21"
