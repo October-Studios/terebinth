@@ -41,7 +41,7 @@
   <a href="#">
     <img
       alt="Documentation"
-      src="https://img.shields.io/docsrs/terebinth?style=for-the-badge&logo=docsdotrs&color=98971a&logoColor=d9e0ee&labelColor=282a36"
+      src="https://img.shields.io/docsrs/terebinth?style=for-the-badge&logo=docsdotrs&logoColor=d9e0ee&labelColor=282a36"
     />
   </a>
   <a href="#">
@@ -55,16 +55,18 @@
 &nbsp;
 
 ## 💭 About
+The terebinth programming language is a compiled language. The compiler is
+built entirely using Rust to ensure memory safety and robustness.
 
 ## 📕 Documentation
-The documentation for the latest version of the terebinth interpreter can be
+The documentation for the latest version of the terebinth compiler can be
 found [here](https://docs.rs/terebinth/). All previously published versions 
 can be found on [crates.io](https://crates.io/crates/terebinth/versions),
 and each version's respective documentation is accessible from there as well.
 
 ## 🔰 Getting Started
 ### Installation
-The terebinth interpreter can be installed using cargo:
+The terebinth compiler can be installed using cargo:
 ```shell
 cargo install terebinth
 ```
@@ -72,7 +74,7 @@ or it can be built from source:
 ```shell
 git clone git@github.com:October-Studios/terebinth.git
 cd terebinth
-cargo build
+cargo build --release
 ```
 <p align="center">
   Copyright &copy; 2024-present
