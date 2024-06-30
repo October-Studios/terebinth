@@ -41,7 +41,7 @@
   <a href="#">
     <img
       alt="Documentation"
-      src="https://img.shields.io/docsrs/terebinth?style=for-the-badge&logo=docsdotrs&color=98971a&logoColor=d9e0ee&labelColor=282a36"
+      src="https://img.shields.io/docsrs/terebinth?style=for-the-badge&logo=docsdotrs&logoColor=d9e0ee&labelColor=282a36"
     />
   </a>
   <a href="#">
